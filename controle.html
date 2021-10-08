@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paivatech Loja Virtual</title>
     <link rel="shortcut icon" href="midia/1.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Estilo/styledms.css">
 </head>
 <body>
     <header>
@@ -14,19 +15,18 @@
         </div>
         <h1>Loja Virtual</h1>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cell.html">Celulares</a></li>
-            <li>Administração</li>
-            <ul>
-                <li><a href="user.html">Usuarios</a></li>
-                <li><a href="adm.html">Administrador</a></li>
-            </ul>
-            <li>Controle</li>
-            <ul>
-                <li><a href="controle.html">Controle</a></li>
-            </ul>
+            <li class="display">
+                <a href="javascript:void(0)" class="esconder">Login</a>
+                <div class="mostrar">
+                    <a href="adm.html">Administrador</a>
+                    <a href="user.html">Usuario</a>
+                </div>
+            </li>
+            <li><a href="controle.html">Controle</a></li>
         </ul>
     </nav>
     <main>
@@ -96,8 +96,8 @@
             </table>
         </section>
     </main>
-    <footer>    
-        Site Desenvolvido por: <a href="autor.html">Antônio Lucas</a>
+    <footer>
+        <a href="autor.html" class="rodape">Site Desenvolvido por: Antônio Lucas</a>
     </footer>
 </body>
 </html>
